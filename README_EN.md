@@ -11,7 +11,7 @@
 
 ## Why this is published
 
-I spent three years at an accredited atmospheric-emissions lab maintaining an Excel engine that implemented GOST 33007‑2014, GOST 17.2.4.06‑90 / 17.2.4.07‑90, and RMG 62‑2003. The system processed ~820 samples / 82 clients / zero formula errors; per-protocol turnaround dropped from a 40-minute manual recalculation to 4 minutes.
+I worked at an accredited atmospheric-emissions lab maintaining an Excel engine that implemented GOST 33007‑2014, GOST 17.2.4.06‑90 / 17.2.4.07‑90, and RMG 62‑2003. The system processed ~820 samples / 82 clients / zero formula errors; per-protocol turnaround dropped from a 40-minute manual recalculation to 4 minutes.
 
 This repository is an anonymized miniature of that system. It is not meant to run a lab — it exists to **publicly show the engineering approach**: how to turn dense metrological standards into a traceable, testable, re-runnable artifact.
 
@@ -100,7 +100,7 @@ See [life-tracking-bot-python-public](https://github.com/proggdd/life-tracking-b
 
 - [LinkedIn](https://www.linkedin.com/in/daniil-glotov/)
 - [Telegram](https://t.me/glotov_daniil)
-- prog.gdd@gmail.com
+- gddviet@gmail.com
 
 ## License
 
