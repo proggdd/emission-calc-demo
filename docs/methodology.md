@@ -17,14 +17,14 @@ An accredited atmospheric-emissions lab measures what comes out of industrial ch
 
 ## Measurement chain (dust)
 
-1. **Velocity** — Pitot tube → dynamic pressure P_dyn → `W = K · √(2·P_dyn / ρ)`.
-2. **Flow rate** — cross-section area × velocity, then normalised to standard conditions (273 K, 101.325 kPa).
-3. **Dust mass** — sample drawn through a pre-weighed filter (cartridge) at isokinetic rate. Mass gain Δm = m₁ − m₀.
-4. **Concentration** — Δm divided by the sampled gas volume at normal conditions.
-5. **Emission** — concentration × volumetric flow at normal conditions.
-6. **Uncertainty** — combined in quadrature from component uncertainties (instruments, time, mass, geometry), expanded by k = 2.
+1. **Velocity**: Pitot tube → dynamic pressure P_dyn → `W = K · √(2·P_dyn / ρ)`.
+2. **Flow rate**: cross-section area × velocity, then normalised to standard conditions (273 K, 101.325 kPa).
+3. **Dust mass**: sample drawn through a pre-weighed filter (cartridge) at isokinetic rate. Mass gain Δm = m₁ − m₀.
+4. **Concentration**: Δm divided by the sampled gas volume at normal conditions.
+5. **Emission**: concentration × volumetric flow at normal conditions.
+6. **Uncertainty**: combined in quadrature from component uncertainties (instruments, time, mass, geometry), expanded by k = 2.
 
-## Why Excel was the right tool — and where it breaks
+## Why Excel was the right tool, and where it breaks
 
 **Right:** every lab already uses Excel; auditors read Excel; formula changes are immediately visible in cell inspection; the team can work without deploying anything.
 
@@ -47,7 +47,7 @@ The staged fix: keep Excel as the human-facing UI for field work, but move the c
 
 **Simplified** (for readability in a public demo):
 - the original `Выход 1` sheet supports 10 dust-collection lines (for multi-stack ISA installations); this demo collapses to 1 line to keep the math visible;
-- the original pressure-saturation table for condensation-method moisture has 86 rows; here the condensation branch is omitted — the demo path is the dry-gas Pitot chain only;
+- the original pressure-saturation table for condensation-method moisture has 86 rows; here the condensation branch is omitted; the demo path is the dry-gas Pitot chain only;
 - the original has separate branches for rectangular vs. circular ducts with different geometry uncertainty propagation; the demo covers the circular-duct branch only.
 
-The simplification is cosmetic — nothing load-bearing was removed. Anyone familiar with the standards will recognise the structure immediately; anyone not familiar will find it easier to read than the 109×55-cell original.
+The simplification is cosmetic: nothing load-bearing was removed. Anyone familiar with the standards will recognise the structure immediately; anyone not familiar will find it easier to read than the 109×55-cell original.
